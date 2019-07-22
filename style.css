@@ -1,0 +1,52 @@
+/*****************************Mobile (default)*****************************/
+.container {
+    max-width: 375px;
+    padding: 0;
+}
+
+.inner-container {
+    width: 90%;
+    padding-left: 5%;
+}
+
+
+/*****************************Tablet*****************************/
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+  }
+
+/*****************************Laptop*****************************/
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: none;
+    }
+
+    .mobile * {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+}
